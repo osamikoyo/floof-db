@@ -1,0 +1,36 @@
+syntax = "proto3";
+
+option go_package = "/pb";
+
+service Floofy{
+  rpc Create(addReq) returns (response);
+  rpc Get(getReq) returns (getResp);
+  rpc Update(updateReq) returns (response);
+  rpc Delete(deleteReq) returns (response);
+}
+
+message addReq{
+  string Key = 1;
+  string Value = 2;
+}
+
+message getReq{
+  string Key = 1;
+}
+
+message getResp{
+  string value = 1;
+}
+
+message updateReq{
+  string key = 1;
+  string newValue = 2;
+}
+
+message deleteReq{
+  string key = 1;
+}
+
+message response{
+  string message = 1;
+}

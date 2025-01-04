@@ -1,1 +1,2 @@
 address = "localhost:60055"
+datapath = "~/.floofy"
