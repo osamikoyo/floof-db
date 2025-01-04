@@ -6,8 +6,7 @@ import (
 )
 
 type Config struct {
-	Addr     string `toml:"address"`
-	DataPath string `toml:"datapath"`
+	Addr string `toml:"address"`
 }
 
 func Get() Config {

@@ -6,7 +6,6 @@ service Floofy{
   rpc Create(addReq) returns (response);
   rpc Get(getReq) returns (getResp);
   rpc Update(updateReq) returns (response);
-  rpc Delete(deleteReq) returns (response);
 }
 
 message addReq{

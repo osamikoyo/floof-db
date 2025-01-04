@@ -33,7 +33,7 @@ func NewServer() Server {
 }
 
 func (s *Server) Run() error {
-	s.logger.Info().Msg(fmt.Sprintf("Floofy-Grpc server started on %s", s.cfg.Addr))
+	s.logger.Info().Msg(fmt.Sprintf("Floof-Grpc server started on %s", s.cfg.Addr))
 
 	return s.Grpc.Serve(s.Lis)
 }
