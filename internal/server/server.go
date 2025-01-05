@@ -37,3 +37,7 @@ func (s *Server) Run() error {
 
 	return s.Grpc.Serve(s.Lis)
 }
+
+func (s *Server) Shutdown() {
+	s.Grpc.Stop()
+}
